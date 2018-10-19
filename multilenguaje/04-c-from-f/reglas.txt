@@ -1,0 +1,7 @@
+para realizar este ejercicio modifique el archivo c-sum.c para que la funcion sum_abs sea compatible con fortran, de manera que quede: sum_abs_
+Luego genere los objetos. Para el archivo c-sum.c use gcc -c y para el de fortran use gfortran -c
+Para generar el ejecutable utilice gcc con la opcion -lgfortran (libreria de fortran) para que los objetos sean compatibles
+
+gfortran -c f-main.f90 -o f-main_f90.o
+gcc -c c-sum.c -o c-sum.o
+gcc f-main_f90.o f-sum_f90.o -lgfortran -o f-main.e

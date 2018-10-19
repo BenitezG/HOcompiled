@@ -1,0 +1,2 @@
+modifique el archivo c-main.c para cambiarle el nombre a la funcion sum_abs por sum_abs_, y le agregue el & adelante de los argumentos que le paso a la funcion para pasarlos por referencia y no por valor.
+Cree los objetos (el de c con gcc -c y el de fortran con gfortran -c) e hice el ejecutable con gcc *.o -o c-main.e
